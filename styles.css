@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Metal Mania');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #2f2c2c;
+    --winning-blocks: rgb(171, 171, 35);
+    --draw-blocks: rgb(162, 12, 12);
+}
+
+body{
+    color: var(--black);
+    font-family: 'Metal Mania', serif;
+}
+
+h1{
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #006400;
+}
+
+#gameboard{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    border: 2px solid;
+}
+
+.box{
+    height: 150px;
+    width: 165.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    /* margin: 0.05px; */
+    font-size: 100px;
+    border: 2px solid;
+    /* border-top: 4px solid;
+    border-left: 4px solid; */
+}
+
+button{
+    padding: 20px 20px;
+    border-radius: 15px;
+    background-color: var(--black);
+    color: white;
+    font-size: 15px;
+    transition: 200ms transform;
+}
+
+button:hoover {
+    cursor:pointer;
+    transform: translateY(-2px);
+}
+
